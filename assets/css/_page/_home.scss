@@ -80,6 +80,22 @@
     width: 6rem;
   }
 
+  .summary-card {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .summary-extend {
+    margin: 10px;
+    padding: 10px;
+    background: $single-post-color;
+    [data-theme='dark'] & {
+      background-color: $global-background-color-dark;
+    }
+    border-radius: 15px;
+  }
+
   .summary {
     padding-top: 1rem;
     padding-bottom: 0.8rem;

@@ -27,6 +27,7 @@
 
     {{- /* Posts */ -}}
     {{- if ne $posts.enable false | and .Site.RegularPages -}}
+    <div class="summary-card">
       {{- /* Paginate */ -}}
       {{- $pages := .Scratch.Get "mainSectionPages" -}}
       {{- if .Site.Params.page.hiddenFromHomePage -}}
@@ -43,6 +44,7 @@
         {{- .Render "summary" -}}
       {{- end -}}
       {{- partial "paginator.html" . -}}
+    </div>
     {{- end -}}
   </div>
 {{- end -}}
